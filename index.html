@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        /* Center the heading and adjust top margin */
+        h1 {
+            text-align: center;
+            margin-top: 200px;
+        }
+
+        /* Styling for the login form */
+        form {
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        /* Style for form labels */
+        label {
+            margin-bottom: 10px;
+        }
+
+        /* Style for text and password input fields */
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #ccc;
+        }
+
+        /* Style for the "Remember me" checkbox */
+        input[type="checkbox"] {
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+
+        /* Style for the submit button */
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: blueviolet;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+
+        /* Style for the "Forgot?" link */
+        .forgot-link {
+            text-align: center;
+            margin-top: -110px;
+            margin-left: 260px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Login form heading -->
+    <h1>Login</h1>
+
+    <!-- Login form -->
+    <form>
+        <!-- Username field -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <!-- Password field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <!-- "Remember me" checkbox -->
+        <input type="checkbox" id="remember" name="remember">
+        <label for="remember">Remember me</label>
+
+        <!-- Login button -->
+        <input type="submit" value="Login">
+    </form>
+
+    <!-- "Forgot?" link -->
+    <p class="forgot-link">Forgot?</p>
+</body>
+</html>
